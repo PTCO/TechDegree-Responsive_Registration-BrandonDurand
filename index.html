@@ -21,31 +21,27 @@
     <form action="index.html" method="post">
         <fieldset>
             <legend>Contact Information</legend>
-
-            <span class="labelRequired">
-                <label for="full-name">Full Name</label>
-                <p class="hint">* - required</p>
-            </span>
+            <label for="full-name">Full Name</label>
+            <p>* - required</p>
             <input type="text" id="full-name" name="user-full-name" placeholder="Required" required>
-            <span class="labelRequired">
-                <label for="emial">Email Address</label>
-                <p class="hint">* -required</p>
-            </span>
+            <label for="email">Email Address</label>
+            <p>* -required</p>
             <input type="text" id="email" name="user-email" placeholder="Required" required>
-            <label for="emial">Phone Number</label>
-            <input type="tel" id="phone" name="user-phone" >
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user-phone" placeholder="Phone Number">
             <label for="street-address">Street Address</label>
-            <input type="text" id="street-address" name="user-street-address">
+            <input type="text" id="street-address" name="user-street-address" placeholder="Street Address">
             <label for="city">City</label>
-            <input type="text" id="city" name="user-city">
+            <input type="text" id="city" name="user-city" placeholder="City">
             <label for="state">State</label>
             <select name="user-state" id="state">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="" selected disabled>Choose State</option>
+                <option value="">California</option>
+                <option value="">Texas</option>
+                <option value="">New York</option>
             </select>
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user-zip">
+            <input type="text" id="zip" name="user-zip" placeholder="Zip">
         </fieldset>
         <fieldset>
             <legend>Newsletter</legend>
@@ -53,13 +49,13 @@
             <span><input type="checkbox" id="HTML" value="HTML"><label for="HTML">HTML News</label></span>
             <span><input type="checkbox" id="CSS" value="CSS"><label for="HTML">CSS News</label></span>
             <span><input type="checkbox" id="JAVASCRIPT" value="JAVASCRIPT"><label for="HTML">Javascript News</label></span>
-            <label for="newsletter-format" style="border: none">Newsletter format</label>
-            <span><input type="radio" id="newsletter-format" name="newsletter-format"><label for="">HTML</label></span>
-            <span><input type="radio" id="newsletter-format" name="newsletter-format"><label for="">Plain text</label></span>
-            <label for="other-topics" style="border: none">Other topics you'd like to hear about</label>
-            <textarea name="user-other-topics" id="other-topics" cols="30" rows="10"></textarea>
-            <button type="submit">Sign <b>Up</b></button>
+            <label for="newsletter-format-html" style="border: none; background: none;">Newsletter format</label>
+            <span><input type="radio" id="newsletter-format-html" name="newsletter-format-html"><label for="newsletter-format-html">HTML</label></span>
+            <span><input type="radio" id="newsletter-format-plaintext" name="newsletter-format-plaintext"><label for="newsletter-format-plaintext">Plain text</label></span>
+            <label for="other-topics" style="border: none; background: none;">Other topics you'd like to hear about</label>
+            <textarea name="user-other-topics" id="other-topics" cols="30" rows="10" placeholder="Other topics"></textarea>
         </fieldset>
+        <button type="submit">Sign <b>Up</b></button>
     </form>
     <footer>
         <p>&copy; Copyright The Code Review</p>
