@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Signup For Newsletter</title>
 </head>
 <body>
@@ -23,12 +26,12 @@
                 <label for="full-name">Full Name</label>
                 <p class="hint">* - required</p>
             </span>
-            <input type="text" id="full-name" name="user-full-name" placeholder="Required">
+            <input type="text" id="full-name" name="user-full-name" placeholder="Required" required>
             <span class="labelRequired">
                 <label for="emial">Email Address</label>
                 <p class="hint">* -required</p>
             </span>
-            <input type="text" id="email" name="user-email" placeholder="Required">
+            <input type="text" id="email" name="user-email" placeholder="Required" required>
             <label for="emial">Phone Number</label>
             <input type="tel" id="phone" name="user-phone" >
             <label for="street-address">Street Address</label>
@@ -47,15 +50,15 @@
         <fieldset>
             <legend>Newsletter</legend>
             <p> Select the newsletter you would like to receive</p>
-            <span><input type="checkbox" id="HTML" value=""><label for="HTML">HTML News</label></span>
-            <span><input type="checkbox" id="CSS" value=""><label for="HTML">CSS News</label></span>
-            <span><input type="checkbox" id="JAVASCRIPT" value=""><label for="HTML">Javascript News</label></span>
-            <label for="newsletter-format">Newsletter format</label>
-            <span><input type="radio" id="" name=""><label for="">HTML</label></span>
-            <span><input type="radio" id="" name=""><label for="">Plain text</label></span>
-            <label for="other-topics">Other topics you'd like to hear about</label>
+            <span><input type="checkbox" id="HTML" value="HTML"><label for="HTML">HTML News</label></span>
+            <span><input type="checkbox" id="CSS" value="CSS"><label for="HTML">CSS News</label></span>
+            <span><input type="checkbox" id="JAVASCRIPT" value="JAVASCRIPT"><label for="HTML">Javascript News</label></span>
+            <label for="newsletter-format" style="border: none">Newsletter format</label>
+            <span><input type="radio" id="newsletter-format" name="newsletter-format"><label for="">HTML</label></span>
+            <span><input type="radio" id="newsletter-format" name="newsletter-format"><label for="">Plain text</label></span>
+            <label for="other-topics" style="border: none">Other topics you'd like to hear about</label>
             <textarea name="user-other-topics" id="other-topics" cols="30" rows="10"></textarea>
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign <b>Up</b></button>
         </fieldset>
     </form>
     <footer>

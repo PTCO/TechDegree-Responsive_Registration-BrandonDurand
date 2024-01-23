@@ -18,50 +18,67 @@ header, footer{
 
 header p{
     padding-bottom:2em;
-    margin: .5em 0 .25em 0;
+    margin: .75em 0 .25em 0;
     border-bottom: 3px solid violet;
-}
-
-h1, h2, legend{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 0px 2px 0 lightgreen;
 }
 
 h1{
     background: #ccc;
-    padding: .25em;
+    padding: .75em;
     font-size: 1.5em;
     margin-bottom: .75em;
+}
+
+h1, h2, legend{
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 0px 2px 0 lightgreen;
 }
 h2{
     font-size: 1.3em;
 }
+
+p{
+    font-family: sans-serif;
+    color: rgb(255, 176, 255)
+}
+
 input, select {
-    max-width: 100;
     margin: .75em 0;
     padding: .65em;
-}
-input[type="checkbox"], input[type="radio"] {
-    margin-right: .5em;
-}
-input{
-    text-align: end;
 }
 input, select, textarea{
     background: #e9e6e6;
     border: none;
     border-radius: 4px;
-}
-input:focus{
+
+}input:focus, textarea:focus, select:focus, input[type="checkbox"]:focus + label , input[type="radio"]:focus+label{
     text-align: start;
     border: 3px solid lightgreen;
+    transition: border .01s;
 }
+input[type="checkbox"], input[type="radio"] {
+    margin-right: .5em;
+}
+input[type="checkbox"]:checked + label, input[type="radio"]:checked+label{
+    border-color: lightgreen;
+    background: lightgreen;
+}
+input{
+    text-align: end;
+}
+
+   
 input:nth-of-type(6){
     padding: .65em 0;
     width: 50%;
 }
+
 textarea{
     height: 6.5em;
+}
+textarea:focus + label{
+    border-color: lightgreen;
+    background: lightgreen;
 }
 
 label{
@@ -74,10 +91,16 @@ fieldset{
 }
 fieldset:last-of-type label{
     margin: 1.25em 0 .65em 0;
+    border: 1.5px solid violet;
+    padding: .15em .2em;
+    border-radius: 5px;
+    width: fit-content;
+}
+fieldset:last-of-type p{
+    margin: 0 0 .75em 0;
 }
 
 legend{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.35em;
     border-top: 2px solid violet;
     padding-top: 1em;
@@ -94,7 +117,13 @@ button[type="submit"]{
     border: none;
     color: white;
     box-shadow: 0px 2px 8px #111;
+    text-shadow: 2px 1px 0 #111;
     font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+b{
+    font-weight: inherit;
+    color: violet;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
