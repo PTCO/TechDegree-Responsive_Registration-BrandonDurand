@@ -1,0 +1,108 @@
+*{
+    font-family: '';
+}
+
+form,
+fieldset,
+header, footer {
+    display: flex;
+    flex-direction: column;
+}
+header div, form{
+    padding: 0 1em;
+}
+
+header, footer{
+    text-align: center;
+}
+
+header p{
+    padding-bottom:2em;
+    margin: .5em 0 .25em 0;
+    border-bottom: 3px solid violet;
+}
+
+h1, h2, legend{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0px 2px 0 lightgreen;
+}
+
+h1{
+    background: #ccc;
+    padding: .25em;
+    font-size: 1.5em;
+    margin-bottom: .75em;
+}
+h2{
+    font-size: 1.3em;
+}
+input, select {
+    max-width: 100;
+    margin: .75em 0;
+    padding: .65em;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-right: .5em;
+}
+input{
+    text-align: end;
+}
+input, select, textarea{
+    background: #e9e6e6;
+    border: none;
+    border-radius: 4px;
+}
+input:focus{
+    text-align: start;
+    border: 3px solid lightgreen;
+}
+input:nth-of-type(6){
+    padding: .65em 0;
+    width: 50%;
+}
+textarea{
+    height: 6.5em;
+}
+
+label{
+    font-family: cursive, 'Arial';
+}
+
+fieldset{
+    border: none;
+    padding-bottom: 1.35em;
+}
+fieldset:last-of-type label{
+    margin: 1.25em 0 .65em 0;
+}
+
+legend{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.35em;
+    border-top: 2px solid violet;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+button[type="submit"]{
+    background: lightgreen;
+    padding: .5em;
+    width: 100%;
+    margin-top: 1.75em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: 0px 2px 8px #111;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.labelRequired{
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    margin: 0 0 1em 0;
+}
