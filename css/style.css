@@ -1,189 +1,138 @@
-*{
-    font-family: '';
+form{
+    border-top: 2px solid violet;
+    padding: 1.75em 0;
 }
-
-form,
-fieldset,
-header, footer {
+fieldset, footer{
     display: flex;
     flex-direction: column;
-}
-
-header div, form{
-    padding: 0 1em;
-}
-
-header, footer{
-    text-align: center;
-}
-
-header p{
-    padding-bottom:2em;
-    margin: .75em 0 .25em 0;
-    border-bottom: 3px solid violet;
-}
-
-h1{
-    background: #ccc;
-    padding: .75em;
-    font-size: 1.5em;
-    margin-bottom: .75em;
-}
-
-h1, h2, legend{
-    font-family: 'Lobster', sans-serif;
-    text-shadow: 0px 2px 0 lightgreen;
-}
-h2{
-    font-size: 1.3em;
-}
-
-p{
-    font-family: sans-serif;
-    color: rgb(255, 176, 255)
-}
-
-form{
-    align-items: center;
-}
-
-input, select, textarea {
-    margin: .75em 0;
-    padding: .8em;
-    background: #e9e6e6;
     border: none;
-    border-radius: 4px;
-}
-input:focus, textarea:focus, select:focus, input[type="checkbox"]:focus + label , input[type="radio"]:focus+label{
-    border: 3px solid lightgreen;
-    transition: border .01s;
-}
-input[type="checkbox"], input[type="radio"] {
-    margin-right: .5em;
-}
-input[type="checkbox"]:checked + label, input[type="radio"]:checked+label{
-    border-color: lightgreen;
-    background: lightgreen;
-}
-input:nth-of-type(6){
-    padding: .65em 2.5%;
-    width: 45%;
 }
 
-::placeholder{
-    text-align: end;
-    opacity: .75;
-    font-size: .85em;
-}
-::placeholder, option{
-    color: rgb(255, 176, 255);
-}
-
-textarea{
-    height: 6.5em;
-    background: lightgreen;
-}
-textarea:focus + label{
-    border-color: lightgreen;
-    background: lightgreen;
-}
-
-label{
-    font-family: cursive, 'Arial';
-}
-
-fieldset{
-    width: 100%;
-    border: none;
-    padding-bottom: 1.35em;
-}
 fieldset:first-of-type{
     border-bottom: 2px solid violet;
-    margin-bottom: 1em;
-}
-fieldset:first-of-type legend{
-    padding-top: 1em;
-    border-top: 2px solid violet;
-}
-fieldset:last-of-type{
-    width: fit-content;
-    padding: 0 .75em;
-    background: #e4e4e4;
-    border-radius: 5px;
-}
-fieldset:last-of-type label{
-    background: whITE;
-    margin: 1.25em 0 .65em 0;
-    border: 1.5px solid violet;
-    padding: .15em .2em;
-    border-radius: 5px;
-    width: fit-content;
-}
-fieldset:last-of-type p{
-    margin: 0 0 .75em 0;
-}
-
-
-legend{
-    font-size: 1.35em;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-button[type="submit"]{
-    padding: .5em;
-    width: 100%;
-    margin-top: 1em;
-    border-radius: 5px;
-    border: 3px solid violet;
-    color: lightgreen;
-    text-shadow: 2px 1px 0 #111;
-    font-size: 1.5em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-b{
-    font-weight: inherit;
-    color: violet;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.labelRequired{
-    display: flex;
-    align-items: center;
+    margin-bottom: 1.25em;
+    padding-bottom: 1.25em;
+    background: lightgray;
 }
 
 footer{
-    margin-top: 1em;
-}
-footer p{
-    margin:  0 0 .5em 0;
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
-/* Media Query */
+.contactLabels{
+    margin: 1em 0 .75em 0;
+}
+
+
+
+input, select, textarea{
+    padding: .75em  1em .75em 0;
+    background: lightgreen;
+    border: none;
+    text-align: end;
+}
+
+input{
+    flex: 1;
+}
+input[id*="zip"]{
+    max-width: 50%;
+}
+input:focus, textarea:focus, select:focus, button, input[type*="checkbox"]:focus + label, input[type*="radio"]:focus+label{
+    border: 2px solid violet;
+    padding: 1em;
+    transition: all .25s;
+}
+
+ button[type*="submit"]:focus{
+    background: lightgray;
+    border-color: lightgray;
+    padding: 1.25em;
+ }
+
+legend{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.25em;
+}
+
+header{
+    margin-bottom: .25em;
+}
+header p, header h2{
+    text-align: center;
+}
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    padding: 1em 0;
+    text-align: center;
+    background: gray;
+    width: 100vw;
+}
+header p{
+    border-bottom: 4px solid violet;
+}
+header div, main{
+    padding: 0 1em;
+}
+header h2{
+    font-family: 'Lobster Two', sans-serif;
+    margin: .5em 0;
+}
+header p{
+    height: 4.5em;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    margin: .5em;
+}
+
+span input{
+    flex: 0;
+    margin-right: 1em;
+}
+
+textarea{
+    height: 5.5em;
+    margin: .75em 0 2em 0;
+}
+
+button{
+    padding: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    background: none;
+}
+
+.newsletterLabels {
+    margin: .75em 0 .5em 0;
+}
+
 
 @media (min-width: 768px){
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    fieldset:first-of-type{
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
     }
-    header{
-        width: 100%;
+    header div,
+    main {
+        padding: 0 11em;
     }
-    form{
-        width: 70%;
+    .contactLabels{
+        width: 25%;
     }
-
-    header div{
-        align-self: center;
-        width: 70%;
+    input, select{
+        flex: 1 65%;
     }
-
-    fieldset{
-        width: 100% !important;
+    input[id*="zip"] {
+        max-width: 25%;
     }
-    fieldset:first-of-type {
-        margin-bottom: 2em;
-    } 
+    .contactInputs{
+        margin: .75em 0;
+    }
 }
